@@ -289,7 +289,7 @@ module Xrechnung
     #   @return [Array]
     member :allowance_charges, type: Array, default: []
 
-    def to_xml(indent: 2, target: "")
+    def to_xml(indent: 2, target: +"")
       xml = Builder::XmlMarkup.new(indent: indent, target: target)
       xml.instruct! :xml, version: "1.0", encoding: "UTF-8"
 
